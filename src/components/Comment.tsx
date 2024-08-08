@@ -35,7 +35,7 @@ export default function Comment({
             </div>
           </div>
         </div>
-      {replies.map((reply: any)=> <Reply {...reply}/>)}
+      {replies.map((reply: any)=> <Reply key={reply.username} {...reply}/>)}
     </div>
   );
 }
